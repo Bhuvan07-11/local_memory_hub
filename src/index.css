@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+.card {
+  @apply rounded-xl border border-slate-700/60 bg-slate-800/60 p-4 shadow-sm transition hover:shadow-md hover:border-slate-600;
+}
+
+.badge {
+  @apply inline-block rounded-full px-2 py-0.5 text-xs font-medium;
+}
+
+.btn {
+  @apply rounded-lg px-3 py-1.5 text-sm font-medium transition active:scale-95;
+}
+
+.skeleton {
+  @apply animate-pulse rounded bg-slate-700/60;
+}
+
+.prose-notes h2 { @apply text-lg font-bold mt-3; }
+.prose-notes h3 { @apply text-base font-bold mt-2; }
+.prose-notes h4 { @apply text-sm font-bold mt-2; }
+.prose-notes p { @apply my-1 text-sm leading-relaxed; }
+.prose-notes li { @apply ml-5 list-disc text-sm; }
+.prose-notes code { @apply rounded bg-slate-900 px-1 text-xs; }
+.prose-notes pre { @apply rounded bg-slate-900 p-2 text-xs overflow-x-auto; }
