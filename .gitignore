@@ -7,3 +7,5 @@ vite.log
 lt.log
 .env
 .DS_Store
+AGENT.md
+.vite/
